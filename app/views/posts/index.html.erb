@@ -1,1 +1,3 @@
-<%= render(@posts) || "There are no blog posts!" %>
+<% @posts.each do |post| %>
+  <%= render @posts || "There are no blog posts!" %>
+<% end %>
